@@ -1,0 +1,47 @@
+/* .counter {
+  font-family: bungee;
+}
+
+.new-tweet {
+  background-color: yellow;
+}
+
+
+
+textarea {
+  
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+
+.horizontal-line {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+button {
+  background-color: blue;
+  font-family: bungee;
+  color: white;
+}
+
+.counter-red {
+  color: red;
+} */
+
+
+.new-tweet {   /* background: yellow; */   padding: 5px 0; }
+
+.new-tweet form {   display: flex;   flex-direction: column; }
+
+.new-tweet form {   font-weight: bold; }
+
+.new-tweet form textarea {   border: none;   border-bottom: 2px solid black; }
+
+.button-counter {   display: flex;   justify-content: space-between;   align-items: center;   font-family: Bungee;   margin: 1rem 0 0 0; }
+
+.new-tweet form button {   background: #4152a1;   color: white;   border: none;   cursor: pointer;   padding: 5px 15px; }

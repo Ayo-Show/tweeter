@@ -52,78 +52,74 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  </head>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav class="nav-bar">
-      <span id="logo">tweeter</span>
-      <span class="nav-text">
-        <strong>Write</strong> a new tweet
+     <!-- Disable viewport zooming -->
+     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
-        <br />
-        <i
-          id="arrow-icon"
-          class="nav-content-right fas fa-angle-double-down"
-        ></i>
-      </span>
-    </nav>
-
-    <header>
-      <div class="container">
-        <img id="avatar" src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div class="header-name">
-        <h2>Your Name</h2>
-      </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
-          <!-- <label for="tweet-text">What are you humming about?</label> -->
-          <textarea
-            name="text"
-            placeholder="What are you humming about"
-            id="tweet-text"
-          ></textarea>
-
-          <!-- <div class="horizontal-line"></div> -->
-          <div class="button-counter">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-
-      <section class="all-tweets-seciton" id="tweets-container">
-
-       
+    </head>
+  
+    <body>
       
-      </section>
-
-      <!-- <div class="tweet container">
-        <article class="tweet">
-          <header>
-            <h1>James Fish</h1>
-            <h2>@MrFish</h2>
-          </header>
-          <div class="tweet-body">
-            <p>little tweet here</p>
+      <nav>
+        
+        <div class="nav">
+        <span id="logo">tweeter</span>
+  
+        <div class="tweet">
+          <span>Write a new tweet</span>
+          
+          <a href="javascript:;"> <i id="arrow" class="fas fa-angle-double-down"></i>
+          </a>
+  
           </div>
-          <footer>
-            <p>10 days ago</p>
-            <span>
-              <i class="fa fa-flag" aria-hidden="true"></i>
-              <i class="fa fa-retweet" aria-hidden="true"></i>
-              <i class="fa fa-heart" aria-hidden="true"></i>
-            </span>
-          </footer>
-        </article>
-      </div> -->
-    </main>
-  </body>
-</html>
+  
+      </div>
+      
+      </nav>
+  
+      <div class="parent">
+      <header class="head">
+        <div>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div class="name">
+            <h2>Name</h2>
+        </div>
+    </header>
+    
+      
+      <main class="container">
+        
+        
+        <section id="new-tweet" class="new-tweet">
+
+          <h2>Compose Tweet</h2>
+          <div class="error_container">
+          <span class="errormsg"></span>
+  
+          </div>
+  
+          <form id="form" action="/tweets" method="post">
+            <div class="label-text">
+            <label for="tweet-text">What are you humming about?</label>
+  
+            <textarea data-maxlength="140" name="text" id="tweet-text"></textarea>
+            </div>
+  
+            <div class="submit">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"><span>140</span></output>
+            </div>
+  
+          </form>
+  
+        </section>
+  
+        <section class="tweets-container">
+          
+      </section>
+      </main>
+    </div>
+    </body>
+  </html>

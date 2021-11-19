@@ -1,23 +1,19 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  $("#tweet-text").keydown(function () {
-    
-    const maxLength = 140;
-    const currentLength = $("#tweet-text").val().length
-    const remainingLength = maxLength - currentLength;
-
-    $(".counter").html(remainingLength)
-
-    if (remainingLength < 0) {
-      $(".counter").addClass("counter-red")
-    } else {
-      $(".counter").removeClass("counter-red")
-    }
-    
-    
-    console.log(maxLength - currentLength);
-    
-
+  $(document).ready(function () {
+    $("textarea").keyup(function () {
+      let value = $(this).val();
+      let maxlength = $(this).data("maxlength");
+  
+      let total = maxlength - value.length;
+      console.log(total);
+  
+      if (total >= 0) {
+        $(".counter").removeClass("error");
+      } else if (total < 0) {
+        $(".counter").addClass("error");
+      }
+      $(".counter span").text(total);
+    });
   });
-
 });

@@ -5,14 +5,12 @@
  */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
 
 body {
   color: #545149;
@@ -28,18 +26,23 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+ #logo {
+  font-family: "Bungee";
+}
+
+main {
+  margin-left: 1rem;
+  margin-right: 1rem;
   background-color: #f4f1ec;
-  
-  margin: 0 10%;
- }
+}
 
- /* form {
-   background-color: green;
-   width: 100%;
- }
+.error {
+  color: red;
+}
 
- form > textarea {
-   border-bottom: 2px solid black;
- } */
-
+@media only screen and (min-width: 1024px) {
+  main {
+    float: right;
+    width: 85vh;
+  }
+}

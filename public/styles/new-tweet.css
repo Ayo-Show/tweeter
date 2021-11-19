@@ -1,47 +1,56 @@
-/* .counter {
-  font-family: bungee;
-}
-
 .new-tweet {
-  background-color: yellow;
+  margin-top: 150px;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
+.submit button {
+  font-family: "Bungee";
+  color: rgb(240, 242, 245);
+  background-color: #4056a1;
+}
 
+.submit {
+  font-family: "Bungee";
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
 
 textarea {
-  
-  border: none;
-  background-color: transparent;
-  resize: none;
-  outline: none;
+  border-bottom: solid;
+  background-color: #f4f1ec;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding-top: 10px;
 }
 
-
-.horizontal-line {
-  height: 2px;
-  width: 100%;
-  background-color: black;
+.label-text {
+  display: flex;
+  flex-direction: column;
 }
 
-button {
-  background-color: blue;
-  font-family: bungee;
-  color: white;
+.tweet-form {
+  align-self: center;
 }
 
-.counter-red {
+h2 {
+  text-align: center;
+}
+
+.errormsg {
+  display: none;
+  border: 2.5px solid red;
+  border-radius: 10px;
   color: red;
-} */
+  padding: 1px;
+}
+
+.error_container {
+  align-self: center;
+  margin-bottom: 50px;
+}
 
 
-.new-tweet {   /* background: yellow; */   padding: 5px 0; }
-
-.new-tweet form {   display: flex;   flex-direction: column; }
-
-.new-tweet form {   font-weight: bold; }
-
-.new-tweet form textarea {   border: none;   border-bottom: 2px solid black; }
-
-.button-counter {   display: flex;   justify-content: space-between;   align-items: center;   font-family: Bungee;   margin: 1rem 0 0 0; }
-
-.new-tweet form button {   background: #4152a1;   color: white;   border: none;   cursor: pointer;   padding: 5px 15px; }

@@ -6,7 +6,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["screenshot Tweeter page"]()
+!["screenshot Tweeter page"](https://github.com/Ayo-Show/tweeter/blob/main/docs/tweeter-page.png)
 
 ## Getting Started
 
